@@ -1,12 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/cerulean/bootstrap.min.css"/>
-  <link rel="stylesheet" href="./assets/style.css">
+    
+
+  <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Weather Boi</title>
+
 </head>
+
   <body>
     <body>
         <nav class="navbar navbar-dark bg-primary mb-3">
@@ -20,20 +31,22 @@
             </div>
             </div>
         </nav>
+
         <form>
-        <div class="container searchContainer">
-            <div class="search card card-body">
-                <h1>Get The Weather For a Location</h1>
-                <p class="lead">Enter Your Location</p>
-                <input type="text" id="searchUser" class="form-control" placeholder="Location">
+            <div class="container searchContainer">
+                <div class="search card card-body">
+                    <h1>Get The Weather For a Location</h1>
+                    <p class="lead">Enter Your Location</p>
+                    <input type="text" id="searchLocation" class="form-control" placeholder="Location">
+                </div>
+                <br>
+                <div id="profile"></div>
             </div>
-            <br>
-            <div id="profile"></div>
-        </div>
-        <div class="container text-center mt-2">
-            <button class="btn btn-primary" id="submit">Submit</button>
-        </div>
+            <div class="container text-center mt-2">
+                <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+            </div>
         </form>
+
         <div id="weatherContainer" class="rows">
             <style>
                 img {
@@ -43,19 +56,19 @@
 
             </style>
 
-            <div id="iconsContainer" class="columns">
+                <div id="iconsContainer" class="columns">
                 <div class="icons">
-                    <p class="weather" id="day1">Monday</p>
-                    <div class="image"><img src="./assets/weatherIcon.jpeg" class="imgClass" id="img1" alt=""></div>
-                    <p class="minValues" id="day1min">Loading...</p>
-                    <p class="maxValues" id="day1max">Loading...</p>
+                    <p class="weather" id="day1"></p>
+                    <div class="image"><img src="./assets/css/weatherIcon.jpeg" class="imgClass" id="img1" alt=""></div>
+                    <p class="minValues" id="day1min"></p>
+                    <p class="maxValues" id="day1max"></p>         
                 </div>
             </div>
 
             <div id="iconsContainer" class="columns">
                 <div class="icons">
-                    <p class="weather" id="day2">Tuesday</p>
-                    <div class="image"><img src="./assets/weatherIcon.jpeg" class="imgClass" id="img1" alt=""></div>
+                    <p class="weather" id="day2"></p>
+                    <div class="image"><img src="./assets/css/weatherIcon.jpeg" class="imgClass" id="img2" alt=""></div>
                     <p class="minValues" id="day2min">Loading...</p>
                     <p class="maxValues" id="day2max">Loading...</p>
                 </div>
@@ -63,8 +76,8 @@
 
             <div id="iconsContainer" class="columns">
                 <div class="icons">
-                    <p class="weather" id="day3">Wednesday</p>
-                    <div class="image"><img src="./assets/weatherIcon.jpeg" class="imgClass" id="img1" alt=""></div>
+                    <p class="weather" id="day3"></p>
+                    <div class="image"><img src="./assets/css/weatherIcon.jpeg" class="imgClass" id="img3" alt=""></div>
                     <p class="minValues" id="day3min">Loading...</p>
                     <p class="maxValues" id="day3max">Loading...</p>
                 </div>
@@ -72,8 +85,8 @@
 
             <div id="iconsContainer" class="columns">
                 <div class="icons">
-                    <p class="weather" id="day4">Thursday</p>
-                    <div class="image"><img src="./assets/weatherIcon.jpeg" class="imgClass" id="img1" alt=""></div>
+                    <p class="weather" id="day4"></p>
+                    <div class="image"><img src="./assets/css/weatherIcon.jpeg" class="imgClass" id="img4" alt=""></div>
                     <p class="minValues" id="day4min">Loading...</p>
                     <p class="maxValues" id="day4max">Loading...</p>
                 </div>
@@ -81,8 +94,8 @@
             
             <div id="iconsContainer" class="columns">
                 <div class="icons">
-                    <p class="weather" id="day5">Friday</p>
-                    <div class="image"><img src="./assets/weatherIcon.jpeg" class="imgClass" id="img1" alt=""></div>
+                    <p class="weather" id="day5"></p>
+                    <div class="image"><img src="./assets/css/weatherIcon.jpeg" class="imgClass" id="img5" alt=""></div>
                     <p class="minValues" id="day5min">Loading...</p>
                     <p class="maxValues" id="day5max">Loading...</p>
                 </div>
@@ -93,5 +106,5 @@
             <!-- might need a "for loop" to create multiple cards -->
         </div>
   </body>
-  <script src="fetch.js"></script>
+  <script src="./assets/js/index.js"></script>
 </html>
